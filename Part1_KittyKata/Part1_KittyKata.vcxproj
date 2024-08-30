@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{bcee5b92-eb14-4936-8ae3-ef77dfeead95}</ProjectGuid>
-    <RootNamespace>IntroToCppA01</RootNamespace>
+    <ProjectGuid>{0145c5a4-fda1-4174-bcf9-7ebd3a1365ad}</ProjectGuid>
+    <RootNamespace>Part1KittyKata</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="IntroToCpp_A01.cpp" />
+    <ClCompile Include="Part1_KittyKata.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
