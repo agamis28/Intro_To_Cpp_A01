@@ -2,6 +2,18 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	for (int i = 1; i <= 100; i++) {
+		if (i % 3 == 0 && i % 5 == 0) {
+			std::cout << "KittyKata" << "\n";
+		}
+		else if (i % 3 == 0) {
+			std::cout << "Kitty" << "\n";
+		}
+		else if (i % 5 == 0) {
+			std::cout << "Kata" << "\n";
+		}
+		else {
+			std::cout << i << "\n";
+		}
+	}
 }
-
