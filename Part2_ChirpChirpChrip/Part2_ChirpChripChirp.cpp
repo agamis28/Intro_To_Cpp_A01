@@ -1,28 +1,8 @@
 #include <iostream>
 #include <string>
 #include <limits>
+#include "utlis.hpp"
 
-float chirpsToTemp(int chirps, std::string type) {
-	const float f = 50 + (chirps * 4 - 40) / 4; // Chrips * 4 to get chirps per minute then add equation to get fahrenheit
-
-	// Return Fahrenheit if type f or return celcius otherwise
-	if (type == "f") {
-		return f;
-	}
-		return (f - 32) * 5 / 9;
-}
-
-bool validateChrips(float fahrenheit) {
-	if (fahrenheit < 50) {
-		return false;
-	}
-	return true;
-}
-
-void clearCin() {
-	std::cin.clear();
-	std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-}
 
 int main()
 {
@@ -35,6 +15,7 @@ int main()
 
 	fahrenheit = chirpsToTemp(chirps, "f");
 
+	// Check if fahrenheit is valid if not clear Cin and try again untill everything is valid
 	if (!validateChrips(fahrenheit)) {
 		do {
 			clearCin();
@@ -44,6 +25,7 @@ int main()
 		} while (fahrenheit < 50);
 	}
 
+	// Output Temperature in f and in c
 	std::cout << "Temperature in Fahrenheit: " << chirpsToTemp(chirps, "f") << "\n";
 	std::cout << "Temperature in Celsius: " << chirpsToTemp(chirps, "c");
 
