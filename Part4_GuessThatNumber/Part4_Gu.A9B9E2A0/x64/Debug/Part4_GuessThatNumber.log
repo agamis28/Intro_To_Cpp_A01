@@ -1,0 +1,4 @@
+﻿  Part4_GuessThatNumber.cpp
+C:\Users\agamis\Desktop\Year 2 Winter 2024\Programming 3\Module 1\Prog3_IntroToCpp_AngelGamis_A01\Part4_GuessThatNumber\Part4_GuessThatNumber.cpp(83,17): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+MSVCRTD.lib(exe_winmain.obj) : error LNK2019: unresolved external symbol WinMain referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\agamis\Desktop\Year 2 Winter 2024\Programming 3\Module 1\Prog3_IntroToCpp_AngelGamis_A01\Part4_GuessThatNumber\x64\Debug\Part4_GuessThatNumber.exe : fatal error LNK1120: 1 unresolved externals
